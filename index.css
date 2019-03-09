@@ -14,7 +14,8 @@ h2 {
     font-size: 1.5rem;
 }
 
-h3 {
+h3,
+h1>small {
     font-size: 1.25rem;
 }
 
@@ -34,4 +35,12 @@ h4 {
 
 th {
     text-align: left;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 0.625rem;
 }
