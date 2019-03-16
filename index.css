@@ -44,6 +44,14 @@ h4 {
     margin-top: 1rem;
 }
 
+ul.work {
+    list-style-type: '👨‍💻 ';
+}
+
+ul.work>li {
+    margin-bottom: 1rem;
+}
+
 th {
     text-align: left;
 }
@@ -54,4 +62,18 @@ dt {
 
 dd {
     margin-bottom: 0.625rem;
+}
+
+.content {
+    padding-left: 1rem;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+summary {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
 }
