@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Montserrat');
+/* Fonts */
 
-:root {
-    font-size: 100%;
-}
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Montserrat');
 
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-    font-size: 3rem;
 }
 
 h1,
@@ -20,6 +14,18 @@ h5,
 h6 {
     font-family: 'Cinzel', serif;
 }
+
+/* Sizes */
+
+:root {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
 
 h2 {
     font-size: 2rem;
