@@ -45,7 +45,6 @@ h4 {
 .skill-set>.explanation {
     margin-bottom: 0rem;
     margin-top: 0rem;
-    font-size: 0.8rem;
 }
 
 .skill-set>table {
@@ -53,7 +52,14 @@ h4 {
 }
 
 th {
+    padding: 0.5rem 1rem;
     text-align: left;
+    border-bottom: 0.1rem solid black;
+}
+
+td {
+    padding: 0.5rem 1rem;
+    border-bottom: 0.1rem solid lightgrey;
 }
 
 
