@@ -98,11 +98,16 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.625rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 
 /* Personal projects */
+
+.personal-projects>details {
+  margin-top: 2rem;
+}
 
 summary:hover {
   cursor: pointer;
@@ -115,5 +120,9 @@ summary {
 }
 
 .content {
-  padding-left: 1rem;
+  padding-left: 2rem;
+}
+
+.content>dl>dt {
+  margin-top: 2rem;
 }
