@@ -1,0 +1,31 @@
+---
+title: Jeremy Fourna portfolio
+css: ../../css/index.css
+location: null
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="Author: Jeremy Fourna">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ css }}">
+  </head>
+
+  <body>
+    {% include "menu-desktop.njk" %}
+    <div class="container">
+      {{ content | safe }}
+      <section class="want-to-know-more-about-me">
+        <h2>Want to know more? 👇</h2>
+        {% include "navigation.njk" %}
+        {% include "personal-projects.njk" %}
+      </section>
+    </div>
+    {% include "menu-mobile.njk" %}
+  </body>
+
+</html>

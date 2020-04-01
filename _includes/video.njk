@@ -1,0 +1,8 @@
+{% macro url(source) %}
+	<div class="only-desktop" data-zoom="30">
+	  <iframe width="480" height="270" src="{{ source }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="only-mobile" data-zoom="17">
+	  <iframe width="272" height="153" src="{{ source }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+{% endmacro %}
