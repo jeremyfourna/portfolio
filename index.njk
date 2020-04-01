@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+skillSet:
+  - name: Understand customer requirements
+    rating: 5
+  - name: Create user stories
+    rating: 5
+  - name: Guide team during implementation
+    rating: 5
+  - name: Customer communication
+    rating: 4
+  - name: Define features based on multiple inputs
+    rating: 5
+  - name: Cross team collaboration
+    rating: 4
+  - name: Product roadmap
+    rating: 4
+  - name: External communications
+    rating: 3
+  - name: Presentation & public speaking skills
+    rating: 3
+  - name: Market research
+    rating: 2
+  - name: Competition research
+    rating: 3
+  - name: Product vision
+    rating: 3
+  - name: Business planning
+    rating: 1
+  - name: Product portfolio management
+    rating: 1
+css: css/index.css
+---
+
+
+<section class="introduction">
+  <h1>I am<br class="only-mobile"> Jeremy Fourna<small>Welcome to my portfolio!</small></h1>
+</section>
+<section class="quick-presentation">
+  <h2>Quick presentation</h2>
+  <p>I am a Product Manager. I have worked most of my carreer on Business to Business (<abbr title="Business to Business">B2B</abbr>) Software as a Service (<abbr title="Software as a Service">SaaS</abbr>) products, for small to medium sized companies in Paris <abbr title="France">🇫🇷</abbr> and Berlin <abbr title="Germany">🇩🇪</abbr>.</p>
+  <p>I am confortable working in the following <em>ecommerce</em> industries:</p>
+  <ul>
+    <li>Ecommerce systems</li>
+    <li>Marketplace</li>
+    <li>Search Engine Optimization (<abbr title="Search Engine Optimization">SEO</abbr>)</li>
+    <li>Search Engine Marketing (<abbr title="Search Engine Marketing">SEM</abbr>)</li>
+    <li>Warehouse Management</li>
+    <li>Logistic</li>
+  </ul>
+  <p>I like working with a team of 4 to 8 developers + 1 to 2 <abbr title="User eXperience">UX</abbr>/<abbr title="User Interface">UI</abbr> designers. Preferably in Scrum or Kanban mode.</p>
+  <p>🤙 <a href="https://www.linkedin.com/in/jeremyfourna" target="_blank" rel="noopener">LinkedIn profile</a> 👈</p>
+</section>
+<section class="skill-set">
+  <h2>My skill set</h2>
+  <p class="explanation"><span class="stars">{{ 1 | stars}}</span> means I know the concept but never did it in real life.</p>
+  <p class="explanation"><span class="stars">{{ 5 | stars}}</span> means I am an expert.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for skill in skillSet %}
+        <tr>
+          <td>{{ skill.name }}</td>
+          <td class="stars">{{ skill.rating | stars }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
