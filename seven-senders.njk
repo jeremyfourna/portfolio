@@ -3,64 +3,60 @@ layout: layouts/base.njk
 location: ../
 ---
 
-<div class="container">
-  <section class="introduction">
-    <h1>Seven Senders <small><time datetime="2017-07-01">July 2017</time> to <time datetime="2018-08-31">August 2018</time></small></h1>
-    <p>My title there was <em>Product Owner</em>. Seven Senders is based in Berlin <abbr title="Germany">🇩🇪</abbr>.</p>
-    <p><a href="https://www.sevensenders.com/" target="_blank" rel="noopener">Click here to know more about Seven Senders</a></p>
-  </section>
-  <section class="why-I-joined">
-    <h3>Why I joined Seven Senders</h3>
-    <p></p>
-  </section>
-  <section class="what-i-did">
-    <section class="what-were-my-responsabilites">
-      <h3>What were my responsabilites at Seven Senders</h3>
-      <p></p>
-    </section>
-    <section class="features-projects-i-worked-on">
-      <h4>Features & Projects I worked on</h4>
-      <dl>
-        <dt>Launch of Sendwise</dt>
-        <dd>
-          <p>In 6 months we launched <a href="https://software.sevensenders.com/" target="_blank" rel="noopener">Sendwise</a>, the new version of the previous product called <em>Analytics</em>. <em>Analytics</em> was a pure <abbr title="Personal Home Page or PHP: Hypertext Preprocessor">PHP</abbr> application, with Sendwise we introduced a <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> front-end on top of the <em>Analytics</em> back-end.</p>
-          <p>Sendwise allow the creation of an unlimited amount of tracking pages that you can customize to your needs. You can also customize all emails send to the customers via the application.</p>
-          <div class="only-desktop" data-zoom="30">
-            <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/h2W5UYpZV74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="only-mobile" data-zoom="17">
-            <iframe width="272" height="153" src="https://www.youtube-nocookie.com/embed/h2W5UYpZV74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </dd>
-        <dt>Carrier messages notifications</dt>
-        <dd>
-          <p>Each carrier has its own set of messages to say the same thing (Package scanned at the hub, Package delivered, Delivery attempt failed, etc.). We improved our internal mapping to allow more use cases for our notifications. For each notification, the brand could decide to display it on their tracking pages, send an email to the customer or to their internal users.</p>
-        </dd>
-        <dt>Integration of Looker</dt>
-        <dd>
-          <p><a href="https://looker.com/" target="_blank" rel="noopener">Looker</a> is a Business Intelligence (<abbr title="Business Intelligence">BI</abbr>) tool, that we integrated inside Sendwise to allow our customers to build custom dashboards about their delivery data.</p>
-        </dd>
-        <dt>Carrier comparison</dt>
-        <dd>
-          <p>Allow a brand to analize which carrier is the best to deliver their products via various <abbr title="Key Performance Indicator">KPI</abbr> and filters.</p>
-        </dd>
-        <dt>Heat map to display delivery time from a warehouse</dt>
-        <dd>
-          <p>Visualize on a map the delivery time from a warehouse to any region in Europe. Brands can see via a color coding quickly in which regions, they are not performing well. This map was done with <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet</a> and <a href="https://gadm.org" target="_blank" rel="noopener">GADM</a> data sets.</p>
-        </dd>
-      </dl>
-    </section>
-    <section class="work-methods">
-      <h4>Work methods</h4>
-      <p>My team consisted of 8 developers. We were working in Scrum mode with a sprint every 2 weeks.</p>
-      <p>We had <abbr title="Objectives and Key Results">OKR</abbr> for the roadmap.</p>
-      <p>I worked in full english (read/speak/write) with a multi-cultural team <abbr title="Germany">🇩🇪</abbr> <abbr title="India">🇮🇳</abbr> <abbr title="Poland">🇵🇱</abbr> <abbr title="Netherlands">🇳🇱</abbr> <abbr title="Russia">🇷🇺</abbr> <abbr title="Ukraine">🇺🇦</abbr>.</p>
-    </section>
-  </section>
-  <section class="why-I-left">
-    <h3>Why I left Seven Senders</h3>
-    <p>After more than a year at <a href="../seven-senders/index.html">Seven Senders</a> and after successfully lunched <a href="https://software.sevensenders.com/" target="_blank" rel="noopener">Sendwise</a> with my team for the <a href="https://k5.de/en/k5-conference/" target="_blank" rel="noopener">K5 2018</a>, I decided that I needed a new adventure with a bigger scope.</p>
-    <p>At Seven Senders, I was working in the logistic industry. We provided tracking information about millions of parcels that our customers shipped to their customers.</p>
-    <p>I needed a bigger stage, more complexity.</p>
-  </section>
-</div>
+{% extends "work-experiences.njk" %}
+
+{% block introduction %}
+  <h1>Seven Senders <small><time datetime="2017-07-01">July 2017</time> to <time datetime="2018-08-31">August 2018</time></small></h1>
+  <p>My title there was <em>Product Owner</em>. Seven Senders is based in Berlin <abbr title="Germany">🇩🇪</abbr>.</p>
+  <p><a href="https://www.sevensenders.com/" target="_blank" rel="noopener">Click here to know more about Seven Senders</a></p>
+{% endblock %}
+
+{% block whyIJoined %}
+  <h3>Why I joined Seven Senders</h3>
+  <p></p>  
+{% endblock %}
+
+{% block whatWereMyResponsabilites %}
+  <h3>What were my responsabilites at Seven Senders</h3>
+  <p></p>
+{% endblock %}
+
+{% block featuresProjectsIWorkedOn %}
+  <h4>Features & Projects I worked on</h4>
+  <dl>
+    <dt>Launch of Sendwise</dt>
+    <dd>
+      <p>In 6 months we launched <a href="https://software.sevensenders.com/" target="_blank" rel="noopener">Sendwise</a>, the new version of the previous product called <em>Analytics</em>. <em>Analytics</em> was a pure <abbr title="Personal Home Page or PHP: Hypertext Preprocessor">PHP</abbr> application, with Sendwise we introduced a <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> front-end on top of the <em>Analytics</em> back-end.</p>
+      <p>Sendwise allow the creation of an unlimited amount of tracking pages that you can customize to your needs. You can also customize all emails send to the customers via the application.</p>
+      <div class="only-desktop" data-zoom="30">
+        <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/h2W5UYpZV74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="only-mobile" data-zoom="17">
+        <iframe width="272" height="153" src="https://www.youtube-nocookie.com/embed/h2W5UYpZV74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </dd>
+    <dt>Carrier messages notifications</dt>
+    <dd>
+      <p>Each carrier has its own set of messages to say the same thing (Package scanned at the hub, Package delivered, Delivery attempt failed, etc.). We improved our internal mapping to allow more use cases for our notifications. For each notification, the brand could decide to display it on their tracking pages, send an email to the customer or to their internal users.</p>
+    </dd>
+    <dt>Integration of Looker</dt>
+    <dd>
+      <p><a href="https://looker.com/" target="_blank" rel="noopener">Looker</a> is a Business Intelligence (<abbr title="Business Intelligence">BI</abbr>) tool, that we integrated inside Sendwise to allow our customers to build custom dashboards about their delivery data.</p>
+    </dd>
+    <dt>Carrier comparison</dt>
+    <dd>
+      <p>Allow a brand to analize which carrier is the best to deliver their products via various <abbr title="Key Performance Indicator">KPI</abbr> and filters.</p>
+    </dd>
+    <dt>Heat map to display delivery time from a warehouse</dt>
+    <dd>
+      <p>Visualize on a map the delivery time from a warehouse to any region in Europe. Brands can see via a color coding quickly in which regions, they are not performing well. This map was done with <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet</a> and <a href="https://gadm.org" target="_blank" rel="noopener">GADM</a> data sets.</p>
+    </dd>
+  </dl>
+{% endblock %}
+
+{% block workMethods %}
+  <h3>Why I left Seven Senders</h3>
+  <p>After more than a year at <a href="../seven-senders/index.html">Seven Senders</a> and after successfully lunched <a href="https://software.sevensenders.com/" target="_blank" rel="noopener">Sendwise</a> with my team for the <a href="https://k5.de/en/k5-conference/" target="_blank" rel="noopener">K5 2018</a>, I decided that I needed a new adventure with a bigger scope.</p>
+  <p>At Seven Senders, I was working in the logistic industry. We provided tracking information about millions of parcels that our customers shipped to their customers.</p>
+  <p>I needed a bigger stage, more complexity.</p>
+{% endblock %}
