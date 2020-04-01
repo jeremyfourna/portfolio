@@ -4,6 +4,10 @@
 
 My portfolio
 
+## Build
+
+`eleventy --formats=njk,css --watch --serve`
+
 ## Pre-commit hook
 
 Add this code at the beggining of the `pre-commit.sample` file.

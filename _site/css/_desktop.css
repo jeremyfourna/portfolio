@@ -4,6 +4,10 @@
 
 @media screen and (min-width: 601px) {
 
+  :root{
+    --max-characters: 60ch;
+  }
+
   /* Typographic scale = 1.5 */
 
   h1 {
@@ -70,7 +74,7 @@
   }
 
   table {
-    width: 100%;
+    width: var(--max-characters);
   }
 
   .skill-set>table {
@@ -146,7 +150,7 @@
   }
 
   p {
-    max-width: 60ch;
+    max-width: var(--max-characters);
   }
 
   .only-mobile {
