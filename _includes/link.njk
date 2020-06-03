@@ -1,0 +1,7 @@
+{% macro external(url, text) %}
+  <a href="{{ url }}" target="_blank" rel="noopener">{{ text }}</a>
+{% endmacro %}
+
+{% macro internal(url, text) %}
+  <a href="{{ url }}">{{ text }}</a>
+{% endmacro %}

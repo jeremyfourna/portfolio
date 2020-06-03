@@ -11,11 +11,13 @@ releaseVideo:
 ---
 
 {% extends "work-experiences.njk" %}
+{% import "link.njk" as link %}
+{% import "video.njk" as video %}
 
 {% block introduction %}
   <h1>Spryker <small><time datetime="2018-09-01">September 2018</time> to today</small></h1>
-  <p>My title there is <em>Senior Product Owner</em>. Spryker is based in Berlin <abbr title="Germany">🇩🇪</abbr> with offices in Hambourg <abbr title="Germany">🇩🇪</abbr> and Kharkov <abbr title="Ukraine">🇺🇦</abbr>.</p>
-  <p><a href="https://spryker.com/" target="_blank" rel="noopener">Click here to know more about Spryker Commerce <abbr title="Operating System">OS</abbr></a></p>
+  <p>My title there is <em>Senior Product Manager</em>. Spryker is based in Berlin <abbr title="Germany">🇩🇪</abbr> with offices in Hambourg <abbr title="Germany">🇩🇪</abbr> and Kharkov <abbr title="Ukraine">🇺🇦</abbr>.</p>
+  <p>{{ link.external("https://spryker.com/", "Click here to know more about Spryker Commerce Operating System") }}</p>
 {% endblock %}
 
 {% block whyIJoined %}
@@ -47,7 +49,6 @@ releaseVideo:
       <p>For every product release, we made a presentation video about it. I hosted 3 of them.</p>
       {% for rv in releaseVideo %}
         <!-- Release {{ rv.name }} -->
-        {% import "video.njk" as video %}
         {{ video.url(rv.source) }}
       {% endfor %}
     </dd>
