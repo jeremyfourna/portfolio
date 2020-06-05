@@ -3,31 +3,40 @@ layout: layouts/base.njk
 location: ../
 ---
 
-<section class="back-to-home-page">
-  <a href="../../index.html">Back to home page</a>
-</section>
-<section class="introduction">
-  <h1>Twenga <small><time datetime="2018-09-01">xxx</time> xxx</small></h1>
-</section>
-<section class="why-i-joined">
+{% extends "work-experiences.njk" %}
+{% import "flags.njk" as flag %}
+{% import "links.njk" as link %}
+
+{% block introduction %}
+  <h1>Twenga <small><time datetime="2015-10-01">October 2015</time> to <time datetime="2016-10-31">October 2016</time></small></h1>
+  <p>My title there was <em>Product Owner</em>. Twenga is based in Paris {{ flag.fr() }}.</p>
+  <p>{{ link.external("https://www.twenga-solutions.com", "Click here to know more about Twenga") }}</p>
+{% endblock %}
+
+{% block whyIJoined %}
   <h3>Why I joined Twenga</h3>
-</section>
-<section class="what-i-did">
-  <section class="what-were-my-responsabilites">
-    <h3>What are my responsabilites at Twenga</h3>
-  </section>
-  <section class="features-projects-i-worked-on">
-    <h4>Features & Projects I worked on</h4>
-    <dl>
-      <dt>xxx</dt>
-      <dd>
-        <p>xxx</p>
-      </dd>
-    </dl>
-  </section>
-  <section class="work-methods">
+{% endblock %}
+
+{% block whatWereMyResponsabilites %}
+  <h3>What are my responsabilites at Twenga</h3>
+{% endblock %}
+
+{% block featuresProjectsIWorkedOn %}
+  <h4>Features & Projects I worked on</h4>
+  <dl>
+    <dt>xxx</dt>
+    <dd>
+      <p>xxx</p>
+    </dd>
+  </dl>
+{% endblock %}
+
+{% block workMethods %}
     <h4>Work methods</h4>
     <p>My team consisted of 4 developers. We worked in Kanban mode.</p>
-    <p>I worked in french (read/speak/write) with a french team.</p>
-  </section>
-</section>
+    <p>I worked in french (read/speak/write) with only french people.</p>
+{% endblock %}
+
+{% block whyILeft %}
+
+{% endblock %}

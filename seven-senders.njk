@@ -4,23 +4,24 @@ location: ../
 ---
 
 {% extends "work-experiences.njk" %}
-{% import "link.njk" as link %}
+{% import "flags.njk" as flag %}
+{% import "links.njk" as link %}
 {% import "video.njk" as video %}
 
 {% block introduction %}
   <h1>Seven Senders <small><time datetime="2017-07-01">July 2017</time> to <time datetime="2018-08-31">August 2018</time></small></h1>
-  <p>My title there was <em>Product Owner</em>. Seven Senders is based in Berlin <abbr title="Germany">🇩🇪</abbr>.</p>
+  <p>My title there was <em>Product Owner</em>. Seven Senders is based in Berlin {{ flag.de() }}.</p>
   <p>{{ link.external("https://www.sevensenders.com/", "Click here to know more about Seven Senders") }}</p>
 {% endblock %}
 
 {% block whyIJoined %}
   <h3>Why I joined Seven Senders</h3>
-  <p>After the closing of the Westwing Berlin office, I needed to find a new challenge. I discoved Seven Senders via my previous manager {{ link.external("https://www.linkedin.com/in/wolf-winter-59250122/", "Wolf Winter") }}, they needed a Product Ownmer to support their carrier delivery analytics product. I knew part of the logistic world via my experience at {{ link.internal("../../westwing/index.html","Westwing") }} and I was eager to expand my knowledge further in the logistic world.</p>   
+  <p>After the closing of the Westwing Berlin office, I needed to find a new challenge. I discoved Seven Senders via my previous manager {{ link.external("https://www.linkedin.com/in/wolf-winter-59250122/", "Wolf Winter") }}, they needed a Product Owner to support their carrier delivery analytics product. I knew part of the logistic world via my experience at {{ link.internal("../../westwing/index.html","Westwing") }} and I was eager to expand my knowledge further in the logistic world.</p>   
 {% endblock %}
 
 {% block whatWereMyResponsabilites %}
   <h3>What were my responsabilites at Seven Senders</h3>
-  <p></p>
+  <p>I managed the <em>Analytics</em> and <em>Tracking</em> products that have been later replaced by <em>Sendwise</em>.</p>
 {% endblock %}
 
 {% block featuresProjectsIWorkedOn %}
@@ -52,6 +53,12 @@ location: ../
 {% endblock %}
 
 {% block workMethods %}
+  <h4>Work methods</h4>
+  <p>My team consisted of 5 to 8 developers. We are worked in Scrum mode with a sprint every 2 weeks.</p>
+  <p>I worked in full english (read/speak/write) with a multi-cultural team {{ flag.de() }} {{ flag.ru() }} {{ flag.in() }} {{ flag.pl() }} {{ flag.th() }}.</p>
+{% endblock %}
+
+{% block whyILeft %}
   <h3>Why I left Seven Senders</h3>
   <p>After more than a year at Seven Senders and after successfully lunched {{ link.external("https://software.sevensenders.com/", "Sendwise") }} with my team for the {{ link.external("https://k5.de/en/k5-conference/", "K5 2018") }}, I decided that I needed a new adventure with a bigger scope.</p>
   <p>At Seven Senders, I was working in the logistic industry. We provided tracking information about millions of parcels that our customers shipped to their customers.</p>

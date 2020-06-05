@@ -11,12 +11,13 @@ releaseVideo:
 ---
 
 {% extends "work-experiences.njk" %}
-{% import "link.njk" as link %}
+{% import "flags.njk" as flag %}
+{% import "links.njk" as link %}
 {% import "video.njk" as video %}
 
 {% block introduction %}
   <h1>Spryker <small><time datetime="2018-09-01">September 2018</time> to today</small></h1>
-  <p>My title there is <em>Senior Product Manager</em>. Spryker is based in Berlin <abbr title="Germany">🇩🇪</abbr> with offices in Hambourg <abbr title="Germany">🇩🇪</abbr> and Kharkov <abbr title="Ukraine">🇺🇦</abbr>.</p>
+  <p>My title there is <em>Senior Product Manager</em>. Spryker is based in Berlin {{ flag.de() }} with offices in Hambourg {{ flag.de() }} and Kharkov {{ flag.ua() }}.</p>
   <p>{{ link.external("https://spryker.com/", "Click here to know more about Spryker Commerce Operating System") }}</p>
 {% endblock %}
 
@@ -28,14 +29,13 @@ releaseVideo:
 
 {% block whatWereMyResponsabilites %}
   <h3>What are my responsabilites at Spryker</h3>
-  <p>I manage what we call the Core stream, a team that takes care of the most critical part of the Spryker OS:</p>
+  <p>I manage what we call the Core/Platform stream, a team that takes care of the most critical part of the Spryker OS:</p>
   <ul>
     <li>Checkout</li>
     <li>Orders</li>
     <li>Personalisation</li>
     <li>Prices</li>
     <li>Products</li>
-    <li>Returns</li>
     <li>Touch-points</li>
     <li>Search</li>
   </ul>
@@ -84,5 +84,5 @@ releaseVideo:
 {% block workMethods %}
   <h4>Work methods</h4>
   <p>My team consists of 6 to 8 developers. We are working in Scrum mode with a sprint every 2 weeks.</p>
-  <p>I work in full english (read/speak/write) with a multi-cultural team <abbr title="Germany">🇩🇪</abbr> <abbr title="Hungary">🇭🇺</abbr> <abbr title="Russia">🇷🇺</abbr> <abbr title="Ukraine">🇺🇦</abbr>.</p>
+  <p>I work in full english (read/speak/write) with a multi-cultural team {{ flag.de() }} {{ flag.hu() }} {{ flag.ru() }} {{ flag.ua() }}.</p>
 {% endblock %}

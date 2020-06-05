@@ -1,14 +1,17 @@
+{% import "flags.njk" as flag %}
+
 <section class="navigation">
   <!-- Navigation from the Home page -->
   <nav>
     <section class="work-experiences">
-      <h3>Work experience <small>Recent to old</small></h3>
+      <h2>Work experience <small>Recent to old</small></h2>
       <ul class="work">
-        <li><a href="{{ location | projectStructure }}spryker/index.html">Spryker <abbr title="Germany">🇩🇪</abbr></a></li>
-        <li><a href="{{ location | projectStructure }}seven-senders/index.html">Seven Senders <abbr title="Germany">🇩🇪</abbr></a></li>
-        <li><a href="{{ location | projectStructure }}westwing/index.html">Westwing <abbr title="Germany">🇩🇪</abbr></a></li>
-        <!-- <li><a href="{{ location | projectStructure }}twenga/index.html">Twenga <abbr title="France">🇫🇷</abbr></a></li>
-        <li><a href="{{ location | projectStructure }}neteven/index.html">Neteven <abbr title="France">🇫🇷</abbr></a></li> -->
+        <li><a href="{{ location | projectStructure }}spryker/index.html">Spryker {{ flag.de() }}</a></li>
+        <li><a href="{{ location | projectStructure }}seven-senders/index.html">Seven Senders {{ flag.de() }}</a></li>
+        <li><a href="{{ location | projectStructure }}westwing/index.html">Westwing {{ flag.de() }}</a></li>
+        <li><a href="{{ location | projectStructure }}twenga/index.html">Twenga {{ flag.fr() }}</a></li>
+        <!--
+        <li><a href="{{ location | projectStructure }}neteven/index.html">Neteven {{ flag.fr() }}</a></li> -->
       </ul>
     </section>
   </nav>

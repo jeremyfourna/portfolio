@@ -4,27 +4,42 @@ location: ../
 ---
 
 {% extends "work-experiences.njk" %}
+{% import "flags.njk" as flag %}
+{% import "links.njk" as link %}
 
 {% block introduction %}
   <h1>Westwing <small><time datetime="2016-11-01">November 2016</time> to <time datetime="2017-07-31">July 2017</time></small></h1>
-  <p>My title there was <em>Product Manager</em>. Westwing is based in Munich <abbr title="Germany">🇩🇪</abbr> but I worked in their Berlin <abbr title="Germany">🇩🇪</abbr> office.</p>
-  <p><a href="https://www.westwing.de/" target="_blank" rel="noopener">Click here to know more about Westwing</a></p>  
+  <p>My title there was <em>Product Manager</em>. Westwing is based in Munich {{ flag.de() }} but I worked in their Berlin {{ flag.de() }} office.</p>
+  <p>{{ link.external("https://www.westwing.de/", "Click here to know more about Westwing") }}</p>  
 {% endblock %}
 
 {% block whyIJoined %}
   <h3>Why I joined Westwing</h3>
+  <p>My wife and I wanted to leave Paris {{ flag.fr() }} to get a bigger appartment.<br>I checked the offers in various cities, in France, London {{ flag.uk() }} and Berlin {{ flag.de() }}.</p>
+  <p>I was really excited by the opportunity to work for Westing in their logistic division and mostly for they warehouse management system.<br>Plus living in Berlin {{ flag.de() }} will be a huge plus.</p>
 {% endblock %}
 
 {% block whatWereMyResponsabilites %}
   <h3>What are my responsabilites at Westwing</h3>
+  <p>I was in charge of the warehouse management system used most of Westwing warehouses. This software was inherited from Rocket Internet, then it was forked to match Westwing requirements.</p>
 {% endblock %}
 
 {% block featuresProjectsIWorkedOn %}
   <h4>Features & Projects I worked on</h4>
   <dl>
-    <dt>xxx</dt>
+    <dt>Multiple warehouse support</dt>
     <dd>
-      <p>xxx</p>
+      <p>Originally, the warehouse management system could only support 1 warehouse. All the orders that entered the system could only fulfilled by 1 warehouse. This implied that an external system will dispatch the orders to each warehouse management system.</p>
+      <p>With this improvement, you can have mutiple warehouses being managed by a single warehouse management system.</p>
+    </dd>
+    <dt>Cost reduction and user productivity</dt>
+    <dd>
+      <p>We have dozens of workers inside our warehouses. Based on the data we collected, we could see which flows inside the warehouses were slow and needed some improvements. The improvements we were looking at were mostly refactoring existing features to remove all the useless steps or increase the performance of the software to allow the users to be faster in their tasks.</p>
+    </dd>
+    <dt>Travelling time of a picker</dt>
+    <dd>
+      <p>Our warehouses had multiple floors, so when you need to define a picking route for a picker, you must have the best heuristic algorithms to make their route as efficient as possible.</p>
+      <p>I created a prototype to reduce the picking time by 20%, mostly inspired by {{ link.external("https://en.wikipedia.org/wiki/Knot_theory", "the knot theory") }}  and {{ link.external("https://en.wikipedia.org/wiki/Travelling_salesman_problem", "the travelling salesman problem") }}.</p>
     </dd>
   </dl>
 {% endblock %}
@@ -32,5 +47,10 @@ location: ../
 {% block workMethods %}
   <h4>Work methods</h4>
   <p>My team consisted of 6 developers. We worked in Scrum mode with a sprint every week.</p>
-  <p>I work in full english (read/speak/write) with a multi-cultural team.</p>
+  <p>I worked in full english (read/speak/write) with a multi-cultural team {{ flag.de() }} {{ flag.in() }} {{ flag.pl() }} {{ flag.lk() }} {{ flag.us() }} {{ flag.za() }} {{ flag.hu() }} {{ flag.mk() }}.</p>
+{% endblock %}
+
+{% block whyILeft %}
+  <h3>Why I left Westwing</h3>
+  <p>To prepare Westwing stock market introduction, the company needed to reduce its costs, they decided to close the Berlin {{ flag.de() }} office and bring back to Munich {{ flag.de() }} some people from the Berlin office. I was fortuned to be part of this group of people. I turned the opportunity down because I just moved in Berlin 6 months ago and I did not want to move again to another city.</p>
 {% endblock %}
