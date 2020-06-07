@@ -19,8 +19,6 @@ h6 {
 /* Sizes */
 
 :root {
-  --base-font-size: 1rem;
-  --desktop-typographic-scale: 1.414; /* https://type-scale.com/ Augmented Fourth */
   --desktop-font-size-xxs: calc(var(--desktop-font-size-xs) / var(--desktop-typographic-scale));
   --desktop-font-size-xs: calc(var(--base-font-size) / var(--desktop-typographic-scale));
   --desktop-font-size-s: calc(var(--base-font-size));
@@ -28,7 +26,6 @@ h6 {
   --desktop-font-size-l: calc(var(--desktop-font-size-m) * var(--desktop-typographic-scale));
   --desktop-font-size-xl: calc(var(--desktop-font-size-l) * var(--desktop-typographic-scale));
   --desktop-font-size-xxl: calc(var(--desktop-font-size-xl) * var(--desktop-typographic-scale));
-  --mobile-typographic-scale: 1.250; /* https://type-scale.com/ Major Third */
   --mobile-font-size-xxs: calc(var(--mobile-font-size-xs) / var(--mobile-typographic-scale));
   --mobile-font-size-xs: calc(var(--base-font-size) / var(--mobile-typographic-scale));
   --mobile-font-size-s: calc(var(--base-font-size));
@@ -36,6 +33,4 @@ h6 {
   --mobile-font-size-l: calc(var(--mobile-font-size-m) * var(--mobile-typographic-scale));
   --mobile-font-size-xl: calc(var(--mobile-font-size-l) * var(--mobile-typographic-scale));
   --mobile-font-size-xxl: calc(var(--mobile-font-size-xl) * var(--mobile-typographic-scale));
-  font-size: var(--base-font-size);
-  hyphens: auto;
 }

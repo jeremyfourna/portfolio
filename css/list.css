@@ -1,0 +1,11 @@
+ul {
+  line-height: 1.5;
+}
+
+ul.work {
+  list-style: none;
+}
+
+ul.work>li {
+  margin-bottom: 1rem;
+}

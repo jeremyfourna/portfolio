@@ -1,0 +1,6 @@
+a {
+  text-decoration: none;
+  background-color: var(--fourth-color);
+  padding: 0.5rem;
+  font-style: italic;
+}

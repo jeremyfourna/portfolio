@@ -96,17 +96,6 @@
   }
 
 
-  /* List */
-
-  ul.work {
-    list-style-type: '👨‍💻 ';
-  }
-
-  ul.work>li {
-    margin-bottom: 1rem;
-  }
-
-
   /* Description list */
 
   dt {

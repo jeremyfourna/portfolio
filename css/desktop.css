@@ -105,21 +105,6 @@
   }
 
 
-  /* List */
-
-  ul {
-    line-height: 1.5;
-  }
-
-  ul.work {
-    list-style-type: '👨‍💻 ';
-  }
-
-  ul.work>li {
-    margin-bottom: 1rem;
-  }
-
-
   /* Description list */
 
   dl {
@@ -180,10 +165,6 @@
   .go-home-button {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-
-  .go-home-button>a {
-    text-decoration: none;
   }
 
 }
