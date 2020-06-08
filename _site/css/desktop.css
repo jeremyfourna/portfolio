@@ -91,13 +91,13 @@
   th {
     padding: 0.5rem 1rem;
     text-align: left;
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.1rem solid var(--color-black);
     font-family: Georgia, serif;
   }
 
   td {
     padding: 0.5rem 1rem;
-    border-bottom: 0.1rem solid lightgrey;
+    border-bottom: 0.1rem solid var(--color-grey);
   }
 
   .stars {

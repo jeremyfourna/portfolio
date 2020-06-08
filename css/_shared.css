@@ -9,5 +9,7 @@
   --third-color: #F77F00;
   --fourth-color: #FCBF49;
   --fifth-color: #EAE2B7;
+  --color-black:#000000;
+  --color-grey: #E5E5E5;
   color: var(--primary-color);
 };
