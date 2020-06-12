@@ -2,7 +2,9 @@
 
 body {
   font-family: Helvetica, sans-serif;
+  font-size: var(--base-font-size);
   font-weight: normal;
+  hyphens: auto;
 }
 
 h1,
@@ -19,6 +21,9 @@ h6 {
 /* Sizes */
 
 :root {
+  --base-font-size: 1rem;
+  --desktop-typographic-scale: 1.414; /* https://type-scale.com/ Augmented Fourth */
+  --mobile-typographic-scale: 1.250; /* https://type-scale.com/ Major Third */
   --desktop-font-size-xxs: calc(var(--desktop-font-size-xs) / var(--desktop-typographic-scale));
   --desktop-font-size-xs: calc(var(--base-font-size) / var(--desktop-typographic-scale));
   --desktop-font-size-s: calc(var(--base-font-size));
@@ -33,4 +38,5 @@ h6 {
   --mobile-font-size-l: calc(var(--mobile-font-size-m) * var(--mobile-typographic-scale));
   --mobile-font-size-xl: calc(var(--mobile-font-size-l) * var(--mobile-typographic-scale));
   --mobile-font-size-xxl: calc(var(--mobile-font-size-xl) * var(--mobile-typographic-scale));
+  --max-characters: 60ch;
 }

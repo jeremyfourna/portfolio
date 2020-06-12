@@ -4,10 +4,6 @@
 
 @media screen and (min-width: 601px) {
 
-  :root{
-    --max-characters: 60ch;
-  }
-
   h1 {
     font-size: var(--desktop-font-size-xxl);
     margin-top: 4rem;

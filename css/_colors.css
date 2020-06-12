@@ -1,0 +1,13 @@
+:root {
+  /* Tokens */
+  --color-primary: #003049;
+  --color-secondary: #F77F00;
+  --color-error: #D62828;
+  --color-link: #FCBF49;
+  --color-info: #EAE2B7;
+  --color-black:#000000;
+  --color-grey: #E5E5E5;
+  --color-white: #ffffff;
+  /* Global settings */
+  color: var(--color-primary);
+};
